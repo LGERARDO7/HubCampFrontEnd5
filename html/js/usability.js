@@ -18,26 +18,27 @@ if(!Modernizr.svg){
 // Sticky header after Hero-Image
 // ** jQuery
 $(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-  var offsetHeader = $('.hero-image').offset().top;
-  var heightHeader = $('.hero-image').height();
-  if(scroll > offsetHeader + heightHeader){
-  //if (scroll >= 800) {
-    $('.nav-custom').addClass('fixed-header');
-  } else {
-    $('.nav-custom').removeClass('fixed-header');
-  }
+    var scroll = $(window).scrollTop();
+    var offsetHeader = $('.hero-image').offset().top;
+    var heightHeader = $('.hero-image').height();
+    if (scroll > offsetHeader + heightHeader) {
+        if (scroll >= 800) {
+            $('.nav-custom').addClass('fixed-header');
+        }
+    } else {
+        $('.nav-custom').removeClass('fixed-header');
+    }
 });
 
 
 // Hover header
 // ** jQuery
-$(document).ready(function(){
-  $('ul.nav li.dropdown').hover(function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-  }, function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-  });
+$(document).ready(function() {
+    $('ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
 });
 
 

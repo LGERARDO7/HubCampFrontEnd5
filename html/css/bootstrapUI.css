@@ -1,74 +1,357 @@
-/*
-Error: Invalid CSS after "  background:": expected expression (e.g. 1px, bold), was "$"
-        on line 5 of C:/HubCamp/HubCampFrontEnd/Clase 5/HubCampFrontEnd5/scss/bootstrapUI/components/_header.scss
-        from line 39 of C:\HubCamp\HubCampFrontEnd\Clase 5\HubCampFrontEnd5\scss\bootstrapUI.scss
+/* Vendor
+================================================== */
+/* Base UI
+================================================== */
+/* Variables
+================================================== */
+/* Helpers
+================================================== */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-1: /*Header
-2: ======*\/
-3: 
-4: nav.custom{
-5:   background:$
-6: }
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
 
-Backtrace:
-C:/HubCamp/HubCampFrontEnd/Clase 5/HubCampFrontEnd5/scss/bootstrapUI/components/_header.scss:5
-C:\HubCamp\HubCampFrontEnd\Clase 5\HubCampFrontEnd5\scss\bootstrapUI.scss:39
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/lexer.rb:229:in `expected!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/parser.rb:710:in `assert_expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/parser.rb:75:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1063:in `sass_script'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:909:in `value!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:778:in `block in try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `call'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `rethrow'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:791:in `try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  background:\": expected expression (e.g. 1px, bold), was \"$\"\A         on line 5 of C:/HubCamp/HubCampFrontEnd/Clase 5/HubCampFrontEnd5/scss/bootstrapUI/components/_header.scss\A         from line 39 of C:\HubCamp\HubCampFrontEnd\Clase 5\HubCampFrontEnd5\scss\bootstrapUI.scss\A \A 1: /*Header\A 2: ======*/\A 3: \A 4: nav.custom{\A 5:   background:$\A 6: }"; }
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  width: 100% !important;
+  min-height: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto; }
+
+table {
+  margin: 0;
+  font-family: "Arial", "Helvetica", sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table.table-striped tbody > tr:nth-of-type(even) {
+    background-color: #ffffff; }
+  table.table-striped tbody > tr:nth-of-type(odd) {
+    background-color: #f1f1f1; }
+  table tbody tr {
+    height: 40px; }
+
+img {
+  max-width: 100%;
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+::-webkit-input-placeholder {
+  color: #878787; }
+
+/* Mixins
+================================================== */
+/* Fonts
+================================================== */
+@font-face {
+  font-family: 'LatoWeb';
+  src: url("../fonts/Lato/Lato-Regular.eot");
+  src: url("../fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular.woff") format("woff"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'LatoWebItalic';
+  src: url("../fonts/Lato/Lato-Italic.eot");
+  src: url("../fonts/Lato/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato/Lato-Italic.woff") format("woff"), url("../fonts/lato/Lato-Italic.ttf") format("truetype");
+  font-weight: italic;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'LatoWebLight';
+  src: url("../fonts/Lato/Lato-Light.eot");
+  src: url("../fonts/Lato/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Light.woff2") format("woff2"), url("../fonts/Lato/Lato-Light.woff") format("woff"), url("../fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'LatoWebSemibold';
+  src: url("../fonts/Lato/Lato-Semibold.eot");
+  src: url("../fonts/Lato/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato/Lato-Semibold.woff") format("woff"), url("../fonts/Lato/Lato-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'LatoWebBold';
+  src: url("../fonts/Lato/Lato-Bold.eot");
+  src: url("../fonts/Lato/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/Lato-Bold.woff") format("woff"), url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'cvwebfont';
+  src: url("../fonts/CV/cvwebfont.eot");
+  src: url("../fonts/CV/cvwebfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CV/cvwebfont.woff") format("woff"), url("../fonts/CV/cvwebfont.ttf") format("truetype"), url("../fonts/CV/cvwebfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility; }
+/* Global
+=================================================== */
+.wrapper {
+  font-size: 1em;
+  line-height: 1.25; }
+
+html, body {
+  height: 100%;
+  background: #f1f1f1; }
+
+.fallback {
+  display: none !important; }
+
+body {
+  font-family: "LatoWeb";
+  color: #5b5a5b; }
+
+/* UI General
+================================================== */
+/* Typography
+================================================== */
+h1, h2, h3, h4, h5 {
+  font-size-adjust: 0.5;
+  text-rendering: optimizeLegibility;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  font-family: "LatoWebBold"; }
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25em; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5em;
+      line-height: 1.125em; } }
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.153em; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2em;
+      font-size: 1.25em; } }
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.36em; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.5em;
+      font-size: 1.25em; } }
+
+h4 {
+  font-size: 1.625em;
+  line-height: 1.15em; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.125em;
+      font-size: 1.25em; } }
+
+h1 a, h2 a, h3 a, h4 a {
+  font-weight: inherit; }
+
+h5 {
+  font-family: "LatoWeb"; }
+
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.458em; }
+  @media (min-width: 768px) {
+    blockquote {
+      font-size: 1.125em;
+      font-size: 1.25em; } }
+
+/*Base*/
+.header .into-text {
+  padding: 40px 8px0 8px; }
+  .header .into-text h1, .header .into-text h2 {
+    letter-spacing: 2em; }
+
+/* UI Modules
+================================================== */
+/* Header
+================================== */
+.nav-custom {
+  background: #ffffff;
+  padding: 16px 0;
+  position: relative;
+  z-index: 100; }
+  .nav-custom .navbar-header .navbar-brand {
+    padding: 8px 4px;
+    height: auto; }
+    .nav-custom .navbar-header .navbar-brand > img {
+      max-width: 216px;
+      width: 100%;
+      padding: 8px 0 0 0; }
+  .nav-custom .navbar-header .navbar-toggle {
+    background-color: #f1f1f1;
+    color: #444444;
+    margin: 0;
+    height: auto;
+    padding: 16px 10px; }
+    .nav-custom .navbar-header .navbar-toggle .icon-bar {
+      background-color: #444444; }
+  .nav-custom .navbar-nav {
+    background-color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .nav-custom .navbar-nav li a {
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #333333;
+      font-family: "LatoWebSemibold"; }
+      .nav-custom .navbar-nav li a .caret {
+        margin-top: -2px; }
+    .nav-custom .navbar-nav > li a {
+      padding-top: 16px;
+      border-bottom: solid 1px transparent; }
+      .nav-custom .navbar-nav > li a:hover, .nav-custom .navbar-nav > li a:active {
+        background-color: #f1f1f1;
+        color: #fd5c22; }
+    .nav-custom .navbar-nav > li .dropdown-menu {
+      padding: 0; }
+      .nav-custom .navbar-nav > li .dropdown-menu > li a {
+        padding: 16px 12px 12px 24px; }
+  .nav-custom .nav .open > a:hover, .nav-custom .nav .open > a:active, .nav-custom .nav .open > a:focus {
+    border-color: #fd5c22; }
+  .nav-custom.fixed-header {
+    background: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    transition: position .85s ease-in, background .75s ease-in-out, padding 1.15s linear;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+    padding: 8px 0 12px; }
+  @media (min-width: 768px) {
+    .nav-custom {
+      background-color: transparent; }
+      .nav-custom .navbar-header {
+        width: 100%;
+        text-align: center;
+        padding: 0; }
+        .nav-custom .navbar-header .navbar-brand {
+          display: inline-block;
+          float: none; }
+      .nav-custom .nav .open > a:focus, .nav-custom .nav .open > a:hover, .nav-custom .nav .open > a:active {
+        background-color: transparent;
+        color: #fd5c22; }
+      .nav-custom .navbar-nav {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        background-color: transparent;
+        float: right; }
+        .nav-custom .navbar-nav > li {
+          display: inline-block;
+          float: none;
+          margin: 8px 8px 0 8px; }
+          .nav-custom .navbar-nav > li a {
+            border-bottom: 3px solid transparent;
+            padding: 12px 10px; }
+            .nav-custom .navbar-nav > li a:hover, .nav-custom .navbar-nav > li a:active {
+              background-color: transparent;
+              border-color: #fd5c22;
+              cursor: pointer; }
+      .nav-custom.fixed-header .navbar-brand {
+        padding: 0 4px; }
+        .nav-custom.fixed-header .navbar-brand > img {
+          max-width: 180px; }
+      .nav-custom.fixed-header .navbar-nav > li {
+        margin-top: 0; }
+        .nav-custom.fixed-header .navbar-nav > li a {
+          padding: 8px 10px 4px 10px; } }
+  @media (min-width: 992px) {
+    .nav-custom {
+      padding: 28px 0 20px; }
+      .nav-custom .navbar-header {
+        width: auto; }
+      .nav-custom .navbar-nav {
+        width: auto; } }
+
+/* Footer
+================================================== */
+.footer {
+  padding: 32px 0 16px;
+  background-color: #ffffff; }
+  .footer div a {
+    display: block;
+    color: inherit; }
+  .footer div.social {
+    border-bottom: solid 1px #999999;
+    padding-bottom: 20px;
+    margin-bottom: 48px; }
+    .footer div.social a {
+      height: 24px;
+      color: #c6c6c6;
+      text-align: center;
+      background-color: #ffffff; }
+      .footer div.social a:active, .footer div.social a:focus, .footer div.social a:hover {
+        text-decoration: none;
+        color: #6d6d6d; }
+      .footer div.social a i:before {
+        font-size: 24px; }
+  .footer div.logo {
+    max-width: 200px;
+    margin-bottom: 40px; }
+    .footer div.logo p {
+      font-family: "LatoWebLight";
+      font-size: 20px;
+      letter-spacing: 0.08px;
+      margin-top: 20px; }
+  .footer div ul {
+    list-style: none;
+    margin-bottom: 32px; }
+    .footer div ul li {
+      margin-bottom: 16px;
+      font-size: 16px; }
+      .footer div ul li a {
+        color: #333333;
+        font-family: "LatoWebLight"; }
+  .footer h3 {
+    font-family: "LatoWebBold";
+    color: #191919;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.015em;
+    margin-top: 0;
+    margin-bottom: 24px; }
+  .footer .copyright {
+    font-size: 12px; }
+  @media (min-width: 768px) {
+    .footer {
+      padding: 48px 0 24px; } }
+
+/*# sourceMappingURL=bootstrapUI.css.map */

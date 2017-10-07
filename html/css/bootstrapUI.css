@@ -197,7 +197,8 @@ blockquote {
 /*Base*/
 .header .into-text {
   padding: 40px 8px0 8px; }
-  .header .into-text h1, .header .into-text h2 {
+  .header .into-text h1,
+  .header .into-text h2 {
     letter-spacing: 2em; }
 
 /* UI Modules
